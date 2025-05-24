@@ -1,0 +1,15 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:percuro_mitarbeiterverwaltung.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="percuro_mitarbeiterverwaltung.Views.LandingView"
+             x:DataType="vm:LandingViewModel">
+   
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Willkommen zur Mitarbeiterverwaltung!" FontSize="24" Margin="0,0,0,20"/>
+        <Button Content="Los geht's" Width="150" Height="40" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center"
+                Command="{Binding GoToLoginCommand}"/>
+    </StackPanel>
+</UserControl>

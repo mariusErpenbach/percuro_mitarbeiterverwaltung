@@ -1,0 +1,16 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:percuro_mitarbeiterverwaltung.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="percuro_mitarbeiterverwaltung.Views.LoginView"
+             x:DataType="vm:LoginViewModel">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        <TextBlock Text="Login" FontSize="24" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+        <TextBox Watermark="Benutzername" Margin="0,0,0,10" Text="{Binding Username, Mode=TwoWay}"/>
+        <TextBox Watermark="Passwort" Margin="0,0,0,20" PasswordChar="*" Text="{Binding Password, Mode=TwoWay}"/>
+        <Button Content="Anmelden" Width="150" Height="40" HorizontalAlignment="Center" Command="{Binding LoginCommand}"/>
+        <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Margin="0,10,0,0"/>
+    </StackPanel>
+</UserControl>

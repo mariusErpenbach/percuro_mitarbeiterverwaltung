@@ -1,0 +1,41 @@
+# .gitignore for C# Avalonia MVVM project
+# Build results
+bin/
+obj/
+
+# Avalonia build artifacts
+*.axaml.cs~
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider/JetBrains
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+# NuGet Packages folder can be ignored if packages are restored on build
+#packages/
+
+# Logs
+*.log
+
+# Others
+*.swp
+*.bak
+*.tmp
+*.orig
+
+# Crash reports
+*.stackdump
